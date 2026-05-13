@@ -203,7 +203,7 @@ root.render(
         margin: 0,
         fontWeight: "500"
       }}>
-        This 3D portfolio of Vivek's showcases creative web development using 
+        This 3D portfolio of Vivek&apos;s showcases creative web development using 
         React Three Fiber, Three.js, and GSAP. Please enable JavaScript to explore 
         the immersive experience.
       </p>
