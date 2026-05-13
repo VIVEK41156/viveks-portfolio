@@ -10,7 +10,6 @@ export default function Loader() {
   return (
     <Html fullscreen>
       <div className='carte'>        
-        <img className='ship' src='./Textures/profimage.jpg'/>
         <p className='text'>Vivek's Portfolio...</p>
       </div>
     </Html>

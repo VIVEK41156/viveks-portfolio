@@ -22,27 +22,25 @@ body, html {
   background-size: cover;
 }
 
-.ship {
-
-  width: 20%;  
-  animation: tanguer 4s ease-in-out infinite; 
-
-}
-
 .text {
   margin-top: 20px; 
-  font-family: MedievalSharp;
-  font-size: 3vh;
+  font-family: MedievalSharp, 'Arial', sans-serif;
+  font-size: 5vh;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+  animation: animate3dText 3s ease-in-out infinite;
+  transform-style: preserve-3d;
 }
 
-@keyframes tanguer {
+@keyframes animate3dText {
   0% {
-    transform: rotate(-8deg);
+    transform: perspective(600px) rotateX(10deg) rotateY(-20deg) scale(0.9);
   }
   50% {
-    transform: rotate(7deg); 
+    transform: perspective(600px) rotateX(-10deg) rotateY(20deg) scale(1.1);
   }
   100% {
-    transform: rotate(-7deg); 
+    transform: perspective(600px) rotateX(10deg) rotateY(-20deg) scale(0.9);
   }
 }
