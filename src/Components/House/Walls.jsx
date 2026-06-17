@@ -1,4 +1,5 @@
 import { useTexture } from '@react-three/drei'
+import { Text } from '@react-three/drei'
 import * as THREE from 'three'
 
 export default function Walls(props)
@@ -21,8 +22,22 @@ export default function Walls(props)
             <meshBasicMaterial map={wallInTexture} map-flipY={false} />
         </mesh>
 
-    </>
+        <mesh position={[4.02, 4.25, -3.8]} rotation={[0, Math.PI/2, 0.05]}>
+            <planeGeometry args={[2.8, 1.2]} />
+            <meshBasicMaterial color="#cb6e6f" />
+        </mesh>
+        
+        <Text
+            position={[4.03, 4.25, -3.8]}
+            rotation={[0, Math.PI/2, 0.05]}
+            fontSize={0.4}
+            color="#5e7b5f"
+            font="./fonts/font.ttf"
+            maxWidth={3}
+            textAlign="center"
+        >
+            Vivek's Portfolio{"\n"}Inside
+        </Text>
 
-    
-    
+    </>
 }
