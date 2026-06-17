@@ -13,9 +13,7 @@ export default function TvScreen(props)
 
 
     const githubTexture = useLoader(TextureLoader, "./logos/logoGithub.png");
-    const xTexture = useLoader(TextureLoader, "./logos/instagram.logo.png");
     const linledinTexture = useLoader(TextureLoader, "./logos/logoLinkedin.png");
-    const cvTexture = useLoader(TextureLoader, "./logos/logoCV.png");
     const sourceTexture = useLoader(TextureLoader, "./logos/youtube.png");
     const workTexture = useLoader(TextureLoader, "./logos/gmail.png");
    
@@ -71,30 +69,12 @@ export default function TvScreen(props)
       </mesh>
 
       <mesh 
-        position={[0.6, 2.45, -3.48]} 
-        scale={[0.09, 0.1, 0.1]} 
-        onClick={() => handleClick("https://www.instagram.com/king___.of___kingzzz?igsh=ZzU5aXhmcmJuMnpl")}
-      >
-        <planeGeometry/>
-        <meshBasicMaterial  map={xTexture} transparent />
-      </mesh>
-
-      <mesh 
         position={[0.8, 2.45, -3.48]} 
         scale={[0.09, 0.1, 0.1]} 
         onClick={() => handleClick("https://www.linkedin.com/in/vivek-p-0b58b624b?utm_source=share_via&utm_content=profile&utm_medium=member_android")}
       >
         <planeGeometry/>
         <meshBasicMaterial  map={linledinTexture} transparent />
-      </mesh>
-
-      <mesh 
-        position={[0.4, 2.25, -3.48]} 
-        scale={[0.07, 0.1, 0.1]}
-        onClick={() => handleClick("https://drive.google.com/file/d/1pM-X9OrK6aeDJ1UHruLob4WO4vVH6GoG/view?usp=sharing")}
-      >
-        <planeGeometry/>
-        <meshBasicMaterial  map={cvTexture} transparent />
       </mesh>
 
       <mesh 
